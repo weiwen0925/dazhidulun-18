@@ -704,4 +704,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C18P3:END-->
+<!--WY-C18P4:BEGIN-->
+<style id="wy-c18p4-css">
+.c18p4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c18p4-fabbox.show{display:block;}
+.c18p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c18p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c18p4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c18p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c18p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c18p4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c18p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c18p4-modal.open{display:flex;}
+.c18p4-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c18p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c18p4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c18p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c18p4-close:hover{background:#e3d5b8;}
+.c18p4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c18p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c18p4-tbl th,.c18p4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c18p4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c18p4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c18p4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c18p4-tbl b{color:#8b2500;}
+.c18p4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c18p4-note b{color:#8b2500;}
+@media(max-width:900px){.c18p4-fabbox{right:14px;}.c18p4-tbl{font-size:11.5px;}.c18p4-card{padding:26px 14px 16px;}}
+</style>
+<div class="c18p4-fabbox" id="c18p4Box"><button class="c18p4-btn" id="c18p4Btn" type="button" aria-label="開啟全景總表"><span class="c18p4-ic">▦</span><span class="c18p4-ls"><span class="c18p4-l1">本品 · 外道似佛·五階破執</span><span class="c18p4-l2">同相異質 · 五階破執</span></span></button></div><div class="c18p4-modal" id="c18p4Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c18p4-card"><button class="c18p4-close" id="c18p4Close" type="button" aria-label="關閉">×</button><h3>卷十八·第四品 外道似佛的五階破執 · 全景總表</h3><p class="sub">卷十八・第四品｜同相異質・牛乳驢乳・五階破執・倫理雙標・生滅煩惱之天地懸殊</p><table class="c18p4-tbl"><caption>一、五階破執階梯 ── 外道每退一步，龍樹逐層破（本品主骨架）</caption><thead><tr><th>階</th><th>外道據點</th><th>龍樹破法</th></tr></thead><tbody><tr><td>① 戒福我見</td><td>也持戒行善、觀無常苦空無我</td><td>實有我與罪福因果<b>絕對互斥</b>；牛皮（壞相·無常→無罪福承受者）虛空（不壞相·常→無避禍就福動機）二難</td></tr><tr><td>② 禪定愛見慢</td><td>已得四禪、四無色定</td><td>「以我心逐禪」→<b>愛(貪味定境)·見(邪見增長)·慢(神通傲慢)</b>三毒齒輪連動；因地不真，禪成我執溫床（戲論增長）</td></tr><tr><td>③ 取空相</td><td>我觀諸法空</td><td>雖觀空而<b>取空相</b>、雖知法空而<b>不自知我空</b>；能所並立（我實·空被實體化）→須空空三昧（第二空破能破之空）·捨筏喻</td></tr><tr><td>④ 無想定</td><td>令一切心心數法不起</td><td><b>強令心滅</b>非實智慧（巨石壓彈簧·力鬆即反彈）；「不知是和合作法」誤有為為涅槃→顛倒；睡夢喻潛伏期</td></tr><tr><td>⑤ 非想非非想</td><td>三界頂峰·非有想非無想</td><td>「是中有想，細微故不覺」；<b>依四眾住</b>（受想行識四陰）；因緣→無常→苦→空→無我→可捨；尺蠖喻·恐懼失我畏墮無所得</td></tr></tbody></table><table class="c18p4-tbl"><caption>二、牛乳驢乳喻 ── 同相異質的底層代碼（繞過一切表相比較）</caption><thead><tr><th>底料</th><th>編譯濾網</th><th>輸出</th></tr></thead><tbody><tr><td>牛乳（三乘）</td><td>同白乳（同相）→ <b>無我</b>（緣起性空）</td><td>酥（實智·能所雙亡·涅槃）</td></tr><tr><td>驢乳（外道）</td><td>同白乳（同相）→ <b>我執</b>（實有自性）</td><td>尿／糞（虛妄）</td></tr></tbody></table><table class="c18p4-tbl"><caption>三、倫理雙重標準 ── 降維打擊（戒行不說謊）</caption><thead><tr><th>項目</th><th>外道戒（功利·護我）</th><th>佛法戒（清淨·無我）</th></tr></thead><tbody><tr><td>行為</td><td>遭急難、為全身、為祭祀、為師</td><td>乃至蟻子不奪命·一針一縷不取·戲笑不妄語</td></tr><tr><td>開許</td><td>殺小人無罪·盜取全濟·聽飲酒妄語</td><td><b>絕對無例外</b>（無急難開許殺生）</td></tr><tr><td>底層邏輯</td><td>「我」高於一切，為保我可犧牲他者</td><td>「無我」，無一絕對的我值得傷害眾生以保全</td></tr></tbody></table><p class="c18p4-note"><b>核心命題</b>：同樣的詞彙、同樣的境界，來自兩種截然不同的心識<b>底層代碼</b>——一端執「我實有」而修一切法，一端照「我本空」而行一切法；輸出的，一是「<b>生諸煩惱處</b>」，一是「<b>滅諸煩惱處</b>」，有若天地。<br><b>斷執鏈（般若公式）</b>：因緣所生→無常→苦→空→無我→可捨。極細之我仍有所依，有所依即有束縛，非想非非想雖壽八萬大劫，福盡仍墮。<br>龍樹五階破執之後補上「倫理對驗」，非補論而是<b>降維打擊</b>：最高深的哲理，必在最基礎的戒律中驗真偽。</p></div></div>
+<script id="wy-c18p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c18p4Btn"),BOX=document.getElementById("c18p4Box"),MODAL=document.getElementById("c18p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c18p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C18P4:END-->
 </body></html>
