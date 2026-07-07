@@ -863,4 +863,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C18P6:END-->
+<!--WY-C18P7:BEGIN-->
+<style id="wy-c18p7-css">
+.c18p7-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c18p7-fabbox.show{display:block;}
+.c18p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c18p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c18p7-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c18p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c18p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c18p7-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c18p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c18p7-modal.open{display:flex;}
+.c18p7-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c18p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c18p7-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c18p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c18p7-close:hover{background:#e3d5b8;}
+.c18p7-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c18p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c18p7-tbl th,.c18p7-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c18p7-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c18p7-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c18p7-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c18p7-tbl b{color:#8b2500;}
+.c18p7-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c18p7-note b{color:#8b2500;}
+@media(max-width:900px){.c18p7-fabbox{right:14px;}.c18p7-tbl{font-size:11.5px;}.c18p7-card{padding:26px 14px 16px;}}
+</style>
+<div class="c18p7-fabbox" id="c18p7Box"><button class="c18p7-btn" id="c18p7Btn" type="button" aria-label="開啟全景總表"><span class="c18p7-ic">▦</span><span class="c18p7-ls"><span class="c18p7-l1">本品 · 摩訶衍空門·真空辨斷滅</span><span class="c18p7-l2">真空辨斷滅 · 般若樞紐</span></span></button></div><div class="c18p7-modal" id="c18p7Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c18p7-card"><button class="c18p7-close" id="c18p7Close" type="button" aria-label="關閉">×</button><h3>卷十八·第七品 摩訶衍空門深層辨析 · 全景總表</h3><p class="sub">卷十八・第七品｜性常自空・真空vs斷滅五辨・動詞形容詞・食鹽喻・三門統攝</p><table class="c18p7-tbl"><caption>一、真空 vs 斷滅邪見 ── 五重分野（語言極似，心法迥異）</caption><thead><tr><th>維度</th><th>斷滅邪見</th><th>摩訶衍真空</th></tr></thead><tbody><tr><td>時間認知</td><td>今有後無（草木自生自滅·半實半虛）</td><td>今空後空貫通（自相皆空·本來無生何有於滅）</td></tr><tr><td>本體操作</td><td>斷滅「<b>令空</b>」（動詞·先立有後破之·破瓶）</td><td>知諸法「<b>真空不破不壞</b>」（形容詞·本然如此·照鏡中像）</td></tr><tr><td>空相取捨</td><td><b>取</b>諸法空相戲論（把空實體化為新執）</td><td><b>不取相</b>、不戲論（藥到病除，藥亦隨病去）</td></tr><tr><td>修行次第</td><td>缺前行·憶想分別·邪心取空（心未柔軟結使未薄，故愛處生愛、瞋處生瞋）</td><td>無量布施→持戒→禪定→心柔軟結使薄→真空自現</td></tr><tr><td>行為導向</td><td>多行眾惡·斷諸善事（<b>斷善根</b>）</td><td>善法尚不欲廢，何況作惡</td></tr></tbody></table><table class="c18p7-tbl"><caption>二、食鹽喻 ── 般若如鹽，用以調味非供單食</caption><thead><tr><th>用法</th><th>譬喻</th><th>義理</th></tr></thead><tbody><tr><td>正確·調味</td><td>鹽（般若空）著於肉菜（布施持戒諸功德）中，籌量多少和之令美</td><td>空是<b>破執之用</b>，成就萬行而不著</td></tr><tr><td>錯誤·單食</td><td>不行諸功德但欲得空，如空抄鹽滿口食之，醎苦傷口</td><td>聞空解脫門而斷諸善根，是為<b>邪見</b></td></tr></tbody></table><table class="c18p7-tbl"><caption>三、三門統攝 ── 般若為樞紐，離之各墮一端</caption><thead><tr><th>門</th><th>偏失（離般若）</th><th>般若統攝</th></tr></thead><tbody><tr><td>阿毘曇門</td><td>分析自相共相，執法相實有 → 墮「<b>有</b>」中</td><td>見諸法雖析而無自性 → 不墮有</td></tr><tr><td>空門</td><td>直觀性空，空成斷滅／空見戲論 → 墮「<b>無</b>」中</td><td>見空亦無空相可得 → 不墮無</td></tr><tr><td>蜫勒門</td><td>問答辯證，於有無兩端搖擺 → 墮「<b>有無</b>」中</td><td>見有無皆假名 → 不墮有無</td></tr></tbody></table><p class="c18p7-note"><b>總說</b>：「摩訶衍空門者，一切諸法<b>性常自空</b>，不以智慧方便觀故空」——色色自空、受想行識自空，乃至薩婆若、阿耨多羅三藐三菩提皆自空。此語與斷滅邪見（無罪福、無今世後世）在語言表層幾不可分，故龍樹以五輪問答逐層細辨。<br><b>樞紐結論</b>：般若波羅蜜<b>不是第四個門</b>，而是穿過三門的核心智慧——「若人入此三門，則知佛法義不相違背…於一切法<b>無所罣礙</b>。」破法非空，緣起即空；無所罣礙非空洞超然，而是於諸法中穿梭自如、無執亦無棄。</p></div></div>
+<script id="wy-c18p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c18p7Btn"),BOX=document.getElementById("c18p7Box"),MODAL=document.getElementById("c18p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c18p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C18P7:END-->
 </body></html>
