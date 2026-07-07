@@ -651,4 +651,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C18P2:END-->
+<!--WY-C18P3:BEGIN-->
+<style id="wy-c18p3-css">
+.c18p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c18p3-fabbox.show{display:block;}
+.c18p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c18p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c18p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c18p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c18p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c18p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c18p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c18p3-modal.open{display:flex;}
+.c18p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c18p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c18p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c18p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c18p3-close:hover{background:#e3d5b8;}
+.c18p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c18p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c18p3-tbl th,.c18p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c18p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c18p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c18p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c18p3-tbl b{color:#8b2500;}
+.c18p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c18p3-note b{color:#8b2500;}
+@media(max-width:900px){.c18p3-fabbox{right:14px;}.c18p3-tbl{font-size:11.5px;}.c18p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c18p3-fabbox" id="c18p3Box"><button class="c18p3-btn" id="c18p3Btn" type="button" aria-label="開啟全景總表"><span class="c18p3-ic">▦</span><span class="c18p3-ls"><span class="c18p3-l1">本品 · 般若相義·摩訶四階</span><span class="c18p3-l2">四階進路 · 二諦統攝</span></span></button></div><div class="c18p3-modal" id="c18p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c18p3-card"><button class="c18p3-close" id="c18p3Close" type="button" aria-label="關閉">×</button><h3>卷十八·第三品 釋般若相義 · 全景總表</h3><p class="sub">卷十八・第三品｜獨稱摩訶・四階進路・能生所與・三階智慧・三乘界分・二諦統攝</p><table class="c18p3-tbl"><caption>一、四階進路 ── 本體→知識→現象→統攝（嚴密推演，非散列）</caption><thead><tr><th>階段</th><th>主題</th><th>核心</th></tr></thead><tbody><tr><td>Phase1·本體論</td><td>「摩訶」的體用與因果</td><td>雙向證明：能生之因（四大人皆從般若生）＋所與之果（唯般若與涅槃）</td></tr><tr><td>Phase2·知識論</td><td>總別相攝·三階智慧</td><td>般若<b>攝</b>一切智慧；學／無學／非學非無學三階梯</td></tr><tr><td>Phase3·現象學</td><td>聲聞、緣覺、佛的界分</td><td>「<b>道雖一種，而用智有異</b>」——差別在覺悟觸媒與智慧起源</td></tr><tr><td>Phase4·中觀統攝</td><td>二諦透視與緣起矩陣</td><td>世俗諦（假名施設）第一義諦（性空一味）；般若攝一切智慧，盡到其邊</td></tr></tbody></table><table class="c18p3-tbl"><caption>二、「摩訶（大）」的雙向證明 ── 能生之因 vs 所與之果</caption><thead><tr><th>向度</th><th>內容</th><th>結論</th></tr></thead><tbody><tr><td>能生之因</td><td>諸佛(第一大)·菩薩·辟支佛·聲聞四大人，皆「<b>從般若中生</b>」；般若＝諸佛之母、一切聖賢共同根源</td><td>「大」非尺寸之形容，而是<b>本體論的根源性</b></td></tr><tr><td>所與之果·前五度</td><td>離般若，布施等只與世間果報（天人受樂還復墮苦·非常·生滅法）</td><td>不得名大</td></tr><tr><td>所與之果·般若</td><td>唯般若攝持，能與眾生大果報——<b>無量無盡、常不變異</b>之涅槃（不生滅）</td><td>唯一稱「摩訶」</td></tr></tbody></table><table class="c18p3-tbl"><caption>三、三乘覺悟者類型學 ──「用智有異」的現象學界分</caption><thead><tr><th>類型</th><th>出現時局</th><th>覺悟觸媒</th><th>智慧廣度／特徵</th></tr></thead><tbody><tr><td>聲聞</td><td>有佛世</td><td>從他聞法</td><td>達別相·僧團共修</td></tr><tr><td>小辟支佛</td><td>無佛世</td><td>觸境自覺</td><td>等同阿羅漢·無異阿羅漢</td></tr><tr><td>大辟支佛</td><td>無佛世</td><td>百劫深觀</td><td>入總別相·具部分佛相·樂獨處</td></tr><tr><td>佛</td><td>曠劫化現</td><td>大悲滿願</td><td>一切種智盡知·三十二相具足·度眾生</td></tr></tbody></table><p class="c18p3-note"><b>三階智慧</b>：非學非無學智＝凡夫加行位（乾慧地、不淨觀、安那般那、四念處、煖頂忍、世間第一法）；學智＝苦法智忍慧→向阿羅漢第九無礙道之金剛三昧慧；無學智＝阿羅漢第九解脫智、盡智、無生智。<br><b>緣起網絡</b>：三乘差別非「誰高誰低」的階級，而是「<b>哪一組因緣被激活</b>」——聲聞依外緣（佛說法）、辟支佛依宿因（無常環境＋宿世種子）、唯佛依<b>大悲</b>（唯一主動、能改寫整個因緣網絡者）。<br><b>名義解構</b>：摩訶＝大（量與境的極致，十方三世四大人）·般若＝慧（直透空性，非一般分別智）·波羅蜜＝到彼岸（窮盡智慧大海之極）。二諦：世俗有無盡差別、第一義本質一體。</p></div></div>
+<script id="wy-c18p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c18p3Btn"),BOX=document.getElementById("c18p3Box"),MODAL=document.getElementById("c18p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c18p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C18P3:END-->
 </body></html>
