@@ -598,4 +598,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C18P1:END-->
+<!--WY-C18P2:BEGIN-->
+<style id="wy-c18p2-css">
+.c18p2-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c18p2-fabbox.show{display:block;}
+.c18p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c18p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c18p2-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c18p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c18p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c18p2-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c18p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c18p2-modal.open{display:flex;}
+.c18p2-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c18p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c18p2-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c18p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c18p2-close:hover{background:#e3d5b8;}
+.c18p2-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c18p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c18p2-tbl th,.c18p2-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c18p2-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c18p2-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c18p2-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c18p2-tbl b{color:#8b2500;}
+.c18p2-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c18p2-note b{color:#8b2500;}
+@media(max-width:900px){.c18p2-fabbox{right:14px;}.c18p2-tbl{font-size:11.5px;}.c18p2-card{padding:26px 14px 16px;}}
+</style>
+<div class="c18p2-fabbox" id="c18p2Box"><button class="c18p2-btn" id="c18p2Btn" type="button" aria-label="開啟全景總表"><span class="c18p2-ic">▦</span><span class="c18p2-ls"><span class="c18p2-l1">本品 · 諸法實相·讚般若偈</span><span class="c18p2-l2">實相判準 · 四柱雙遣</span></span></button></div><div class="c18p2-modal" id="c18p2Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c18p2-card"><button class="c18p2-close" id="c18p2Close" type="button" aria-label="關閉">×</button><h3>卷十八·第二品 諸法實相 · 全景總表</h3><p class="sub">卷十八・第二品｜否定式判準・雙遣（亦不作是觀）・三則一相・四柱記憶網・言語法亦滅</p><table class="c18p2-tbl"><caption>一、實相的否定式判準 ── 三句同封三個方向（龍樹不正面定義，先立判準）</caption><thead><tr><th>判準</th><th>所封方向</th><th>義涵</th></tr></thead><tbody><tr><td>不可破壞</td><td>封「可辯破」</td><td>凡<b>可被辯破</b>的見，皆非實相</td></tr><tr><td>常住不異</td><td>封「因緣變異」</td><td>凡<b>因緣變異</b>之相，皆非實相</td></tr><tr><td>無能作者</td><td>封「造作」</td><td>凡<b>被造作出來</b>之境，皆非實相；三句之外者，仍須被雙遣利劍續剖</td></tr></tbody></table><table class="c18p2-tbl"><caption>二、觀修的雙遣邏輯 ── 三重否定 ＋「亦不作是觀」（破後設）</caption><thead><tr><th>層次</th><th>口訣</th><th>破什麼</th></tr></thead><tbody><tr><td>第一重·捨一切觀</td><td>放下所有「觀什麼」的修法對象</td><td>破<b>所觀之境</b></td></tr><tr><td>第一重·滅一切言語</td><td>息滅內在概念化與外在言說</td><td>破<b>言詮</b></td></tr><tr><td>第一重·離諸心行</td><td>脫離一切心之動念</td><td>破<b>能觀之心行</b>；三者同時成就，方名「如涅槃相」</td></tr><tr><td>第二重·亦不作是觀</td><td>於第一重否定後再遣「能觀之心」</td><td>破<b>後設認知</b>——不使「空／無執／不可得」再被執為新命題（隱微法執）</td></tr></tbody></table><table class="c18p2-tbl"><caption>三、中觀四柱記憶網 ── 任一柱皆可入門，四柱齊備即中論骨架</caption><thead><tr><th>柱</th><th>要旨</th><th>本品偈證</th></tr></thead><tbody><tr><td>四句破除</td><td>正(有)反(無)俱(亦有亦無)非(非有非無)全破；「非常非無常」非第五句，而是對「<b>命題化</b>」動作本身的遮遣</td><td>離四句·絕百非</td></tr><tr><td>八不中道</td><td>從時間／相續／同一／空間四向度同時遮破實有座標</td><td>「般若無所來，亦復無所去」（不來不去）·「從本已來不生不滅」（不生不滅）</td></tr><tr><td>二諦圓融</td><td>以世俗攝勝義；<b>以有言讚無言</b>，深知語言極限卻為慈悲用盡語言</td><td>「般若雖叵讚，我今能得讚」</td></tr><tr><td>能所雙亡</td><td>佛(主體)·般若(智慧)·涅槃(境界)三端實存性同時消解</td><td>「若如法觀佛，般若及涅槃，<b>是三則一相</b>」·「大火焰四邊不可取」</td></tr></tbody></table><p class="c18p2-note"><b>大火焰喻</b>：「般若波羅蜜，譬如大火焰，<b>四邊不可取</b>，無取亦不取」——有／無／亦有亦無／非有非無四句，任何攀緣皆被矛盾與執著反噬，如伸手向火無一處可取。<br><b>結讚的自建自破</b>：「適無所依止，誰能讚其德？」先破「讚」之可能，緊接「我今能得讚」又肯認言語之用，收於「雖未脫死地，則為已得出」——此即二諦圓融、說法者永恆的姿態。<br><b>Master Matrix</b>：雙遣理路（非常非無常→亦不作是觀→捨觀滅言語離心行→如涅槃相）與無所取（四邊不可取→無取亦不取→無依止）二軌同轉，中心「實相」非可觀對象，而是二軌運轉時自然顯現的「空處」；究極歸於「<b>言語法亦滅</b>」之靜默。</p></div></div>
+<script id="wy-c18p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c18p2Btn"),BOX=document.getElementById("c18p2Box"),MODAL=document.getElementById("c18p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c18p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C18P2:END-->
 </body></html>
