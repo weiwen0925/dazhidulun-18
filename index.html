@@ -2096,4 +2096,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH18P7:END-->
+<!--WY-BH18P8:BEGIN-->
+<style id="wy-bh18p8-css">
+.bh18p8-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh18p8-fabbox.show{display:block;}
+.bh18p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh18p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh18p8-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh18p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh18p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh18p8-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh18p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh18p8-modal.open{display:flex;}
+.bh18p8-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh18p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh18p8-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh18p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh18p8-close:hover{background:#dde2e6;}
+.bh18p8-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh18p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh18p8-tbl th,.bh18p8-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh18p8-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh18p8-tbl thead th:nth-child(1){width:32%;}.bh18p8-tbl thead th:nth-child(2){width:41%;}.bh18p8-tbl thead th:nth-child(3){width:27%;}
+.bh18p8-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh18p8-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh18p8-guan{background:#eef2f5;color:#37505f;}
+.bh18p8-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh18p8-tbl tbody tr:nth-child(even) td.bh18p8-guan{background:#e8eef2;}
+.bh18p8-tbl tbody tr:nth-child(even) td.bh18p8-qa{background:#e7ecdb;}
+.bh18p8-tbl b{color:#8b2500;}
+.bh18p8-guan b{color:#2f6b5a;}
+.bh18p8-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh18p8-note b{color:#8b2500;}
+@media(max-width:900px){.bh18p8-fabbox{right:14px;}.bh18p8-tbl{font-size:11px;}.bh18p8-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh18p8-fabbox" id="bh18p8Box"><button class="bh18p8-btn" id="bh18p8Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh18p8-ic">譯</span><span class="bh18p8-ls"><span class="bh18p8-l1">本品 · 原文·白話·中觀</span><span class="bh18p8-l2">白話翻譯表</span></span></button></div><div class="bh18p8-modal" id="bh18p8Modal" role="dialog" aria-modal="true"><div class="bh18p8-card"><button class="bh18p8-close" id="bh18p8Close" type="button" aria-label="關閉">×</button><h3>卷十八 · 第8品 白話翻譯表（般若相性論·一相與種種相）</h3><p class="sub">大智度論卷十八·般若相性論·一相與種種相 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh18p8-tbl"><caption>般若相性論·一相與種種相 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共15段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh18p8-src">復次，菩薩摩訶薩行般若波羅蜜，雖知諸法一相，亦能知一切法種種相；雖知諸法種種相，亦能知一切法一相。菩薩如是智慧，名為般若波羅蜜。</td><td>再者，菩薩摩訶薩修行般若波羅蜜的時候，雖然照見諸法是同一體性（一相），卻也能夠了知一切法各自差別的種種相狀；雖然了知一切法有種種差別相狀，卻也能夠照見一切法同歸於一相。菩薩具備這樣的智慧，就稱為般若波羅蜜。</td><td class="bh18p8-guan"><b>一相與種種相的雙照——般若的總綱</b>——此句開宗明義揭示般若波羅蜜的核心特質：不偏廢「一相」（諸法皆歸於空的共性）與「種種相」（諸法各自差別的殊性）任何一邊，而是雙照並觀、圓融無礙。這正是中觀「二諦圓融」精神的具體展現——勝義諦見一相（空），世俗諦見種種相（差別），般若智慧能同時透視二者而不相妨礙。</td></tr><tr><td class="bh18p8-src">菩薩摩訶薩云何知一切法種種相？云何知一切法一相？</td><td>有人問：菩薩摩訶薩是如何了知一切法的種種差別相狀的呢？又是如何了知一切法同歸於一相的呢？</td><td class="bh18p8-guan"><b>設問承接——請示種種相與一相的觀法</b>——此問緊承上文總綱，具體請教「種種相」與「一相」二者各自的觀察方法，是全品展開細部論證的起點。</td></tr><tr><td class="bh18p8-src">菩薩觀諸法相，所謂有相。因是有，諸法中有心生，如是等一切有。</td><td>回答說：菩薩觀察諸法的相狀，所觀見的即是「有相」。正因為有這個「有」，諸法之中才會生起「有」的認知之心，像這樣一切法便都被認知為「有」。</td><td class="bh18p8-guan"><b>觀有相——世俗認知的起點</b>——此答先從「有相」這一面說起：眾生對世界的認知，最初是建立在「有法存在」這個預設之上，由此才有種種認知心的生起。這是菩薩了知「種種相」的第一步——先如實承認世俗認知中「有」的運作方式，而非一開始就否定一切。</td></tr><tr><td class="bh18p8-src">無法中云何有心生？</td><td>有人問：如果法本來是「無」的，那麼在「無」之中，為什麼還會生起（認知這個法為有的）心呢？</td><td class="bh18p8-guan"><b>詰難——無中生心的悖論</b>——此問極為犀利：若究竟而言諸法本無自性（無），那麼認知「有」的心又是從何而生？「無」中如何能生「心」？這一詰問直指「有」的認知本身是否站得住腳的根本問題。</td></tr><tr><td class="bh18p8-src">若言無，是事即是有法。</td><td>回答說：如果說「法是無」，那麼「法是無」這件事本身，其實也已經是安立了一個「有」（有一個「無」作為對象被主張、被言說）。</td><td class="bh18p8-guan"><b>以子之矛攻子之盾——言「無」即已成「有」</b>——這是極精妙的一記反擊：一旦開口說「無」，「無」便已被當作一個可陳述、可主張的對象而成立，此陳述行為本身已落入「有」的範疇。這一辯證手法與後文〈解構物質的四重防線〉品「不應言無相，於諸法無相即是相」如出一轍，皆是龍樹慣用的「言詮自身即落言詮」的深刻洞察。</td></tr><tr><td class="bh18p8-src">復次，菩薩觀一切法一相，所謂無相。如牛中無羊相，羊中無牛相；如是等諸法中，各各無他相。</td><td>再者，菩薩觀察一切法同歸於一相，這裡所說的「一相」，指的即是「無相」。就好比牛之中沒有羊的相狀，羊之中也沒有牛的相狀；像這樣，在種種法之中，各自都沒有其他法的相狀（可以彼此混淆）。</td><td class="bh18p8-guan"><b>一相即無相——牛羊喻的初步展開</b>——此句轉入「一相」的一面：所謂諸法同歸一相，並非說牛羊等法彼此等同混淆，而是說每一法各自都「無他相」可得——牛的自相中找不到羊的相狀，這恰恰指向每一法皆無獨立自性（無相）的道理，「一相」與「無相」在此是同一義的兩種說法。</td></tr><tr><td class="bh18p8-src">如先言因有故有心生，是法異於有，異故應無。若有法是牛，羊亦應是牛。何以故？有法不異故。若異則無，如是等一切皆無。</td><td>就好比前面所說「因為有『有』的緣故，才生起（認知有的）心」，如果這個「法」是異於「有」的（另一個獨立的東西），那麼既然是異於有，就應當歸於無。假使「有」這個法就是牛，那麼羊也應當是牛才對。這是什麼緣故呢？因為「有」這個法本身並沒有差異的緣故（若一切法皆同一個「有」，便不應再有牛羊之別）。可是如果彼此確實有差異，那就應當歸於無（沒有一個統一不變的「有」可作為共同本體），像這樣一切法都歸於無。</td><td class="bh18p8-guan"><b>牛羊同異之辨——遮詮式的邏輯推演</b>——此段運用龍樹典型的「異即無」推理：若萬法共享同一個「有」的自性，牛羊便不應有別（有法不異）；若牛羊確實有別，則「有」作為統一自性便不能成立（異則無）。無論選擇「不異」或「異」的哪一端，都導向「有」不能作為諸法的實體自性而成立，從而反顯一切法本自無相。</td></tr><tr><td class="bh18p8-src">復次，菩薩觀一切法一，因是一法，諸法中一心生。諸法各各有一相，合眾一故名為二、名為三；一為實，二、三為虛。</td><td>再者，菩薩觀察一切法可以歸於「一」，因為有這個「一法」的緣故，諸法之中便生起認知「一」的心。諸法各自都具有「一」這個相狀，把眾多的「一」合併起來，便被稱為「二」、稱為「三」；其中「一」是真實的，而「二」、「三」則是由「一」施設安立出來的虛假名相。</td><td class="bh18p8-guan"><b>觀一——數目概念的施設性</b>——此段從「有相／無相」轉向「一／異」的層面：一切數目概念（二、三……）其實都是建立在最基本的「一」之上，透過施設安立而成，並無獨立自性。這為下文進一步推翻「一」本身的實體性作了鋪墊，顯示連最基礎的「一」也不能自外於因緣施設的性質。</td></tr><tr><td class="bh18p8-src">復次，菩薩觀諸法有所因故有，如人身無常。何以故？生滅相故。一切法皆如是，有所因故有。</td><td>再者，菩薩觀察諸法，是因為有它所依憑的因緣，所以才說它是「有」，就好比人的色身是無常的一樣。這是什麼緣故呢？因為它具有生滅變化的相狀。一切法都是這樣，都是因為有所依憑的因緣，才被稱為「有」。</td><td class="bh18p8-guan"><b>觀有因——因果法則的世俗承認</b>——此段承認世俗諦層面「諸法依因緣而有」這一基本法則，以人身無常、具生滅相為例，說明凡是「有」的法，必定有其所依憑的因（有所因故有）。這是為了下一段進一步逼問「這個因本身又依何而有」預作鋪墊，展開對因果鏈條本身的深層拆解。</td></tr><tr><td class="bh18p8-src">復次，一切諸法無所因故有，如人身無常，生滅故；因生滅故知無常。此因復應有因，如是則無窮；若無窮則無因；若是因更無因，是無常因亦非因，如是等一切無因。</td><td>再者，（若進一步追問，）一切諸法其實也可以說是「沒有」所依憑的因才成其為「有」，就好比人的色身是無常的，因為具有生滅的相狀；正因為有生滅，所以才知道它是無常的。可是這個作為「因」的生滅，難道不也應當有它自己的因嗎？如果一路追溯下去，就會陷入無窮無盡的推求；如果真的無窮無盡，那麼最初就等於沒有一個真正的「因」；如果說這個因本身不再需要別的因，那麼這個所謂「無常之因」其實也就不能成立為真正的因了，像這樣推究下去，一切法便都成了「無因」。</td><td class="bh18p8-guan"><b>無窮過與自因過——因果鏈條的雙重瓦解</b>——此段是全品邏輯最精密的一段，展現典型的「無窮過」（Infinite Regress）論證：若堅持「凡有必有因」，因又需要因，因因相推，永無窮盡，等於根本找不到一個可以安立的「第一因」；若中途喊停、承認某個因不再需要因，則此因便自相矛盾地失去了「因」的資格。兩條路皆導致「無因」的結論，徹底瓦解了將因果關係執為實有自性鏈條的思維方式，這正是中觀「因緣所生法，我說即是空」的邏輯基礎所在。</td></tr><tr><td class="bh18p8-src">復次，菩薩觀一切法有相，無有法無相者：</td><td>再者，菩薩（換一個角度）觀察一切法都是有相狀的，沒有任何一法是完全無相的：</td><td class="bh18p8-guan"><b>觀有相總宣言——轉入物理與倫理諸相的具體列舉</b>——此句是一個過渡性的總起句，承接前文對「有相／無相」「一／異」「因／無因」諸層面的辯證之後，轉而具體列舉世間諸法各自的相狀（地水火風、空間時間、罪福、縛脫），作為「種種相」的實例展示，呼應品首「亦能知一切法種種相」的總綱。</td></tr><tr><td class="bh18p8-src">如：地，堅、重相；水，冷、濕相；火，熱、照相；風，輕、動相。</td><td>例如：地大，具有堅硬、沉重的相狀；水大，具有寒冷、潮濕的相狀；火大，具有炎熱、照明的相狀；風大，具有輕盈、飄動的相狀。</td><td class="bh18p8-guan"><b>四大物理相——構成物質界的基本維度</b>——此段列舉地水火風四大各自的特徵相狀，是「種種相」在物質世界層面最基礎的例證。值得注意的是，這些「相」雖各有不同，卻並不妨礙它們同歸於「一相」（無相／自性空）——四大之相是世俗施設上的差別，其自性仍是空的，這正呼應品首「一相」與「種種相」雙照不二的總綱。</td></tr><tr><td class="bh18p8-src">虛空，容受相；分別覺知，是為識相。有此有彼，是為方相；有久有近，是為時相。</td><td>虛空，具有容納承受萬物的相狀；能夠分別覺知的作用，這就是識（心識）的相狀。有這裡、有那裡（空間位置的區分），這就是方位的相狀；有長久、有短近（時間長短的區分），這就是時間的相狀。</td><td class="bh18p8-guan"><b>時空識相——承載萬象的框架維度</b>——此段列舉虛空、心識、方位、時間四種相狀，這些是承載一切物質與心理現象得以顯現的「框架性」維度，與前段的四大物理相共同構成菩薩所觀「種種相」的完整圖景——從最具體的物質特性，到最基礎的認知與時空框架，無一不是因緣施設之相，無一能外於「一相」（空）。</td></tr><tr><td class="bh18p8-src">濁惡心惱眾生，是為罪相；淨善心愍眾生，是為福相。</td><td>以污濁惡劣之心去惱害眾生，這就是罪業的相狀；以清淨善良之心去憐愍眾生，這就是福德的相狀。</td><td class="bh18p8-guan"><b>罪福相——倫理業力的維度</b>——此段將「種種相」的觀察範疇，從物質與認知框架擴展至倫理與業力層面：罪與福並非空洞的抽象概念，而是由「惱害眾生」或「憐愍眾生」這樣具體的心念與行為所決定的相狀，說明業果法則同樣是「種種相」中不可或缺的一環，與前文〈三乘實智與外道虛妄辨〉品所論的因果戒律遙相呼應。</td></tr><tr><td class="bh18p8-src">著諸法，是為縛相；不著諸法，是為解脫相。現前知一切法無礙，是為佛相。如是等一切各有相。</td><td>執著於諸法，這就是繫縛的相狀；不執著於諸法，這就是解脫的相狀。當下便能了知一切法都無所罣礙，這就是佛的相狀。像這樣種種法，各自都有其相狀。</td><td class="bh18p8-guan"><b>解脫道相——修行階位的終極維度總結</b>——此段以「縛」「脫」「佛」三個層次的相狀作為全品「種種相」列舉的壓軸與總結：從物質、時空、倫理，一路提升到修行解脫的終極維度，說明即使是佛果本身，在世俗諦上依然可以被描述為「一切法無礙」之相；然而正如品首所揭示，這一切種種相的背後，仍歸於「一相」——自性本空、無相可得，種種相與一相始終雙照不二，共同構成般若波羅蜜圓融無礙的智慧全貌。</td></tr></tbody></table><p class="bh18p8-note">大智度論卷十八第8品「般若相性論·一相與種種相」原文·白話·中觀對照。一相種種相雙照總綱、觀有相問答、無法中云何有心生詰難、言無即有法反擊、一相即無相牛羊喻、異即無邏輯推演、觀一數目施設、觀有因世俗因果、觀無因無窮過與自因過、觀有相總宣言、四大物理相、時空識相、罪福相、解脫道相</p></div></div>
+<script id="wy-bh18p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh18p8Btn"),BOX=document.getElementById("bh18p8Box"),MODAL=document.getElementById("bh18p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c18p8Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh18p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH18P8:END-->
 </body></html>
