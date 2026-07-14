@@ -2300,4 +2300,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH18P11:END-->
+<!--WY-BH18P12:BEGIN-->
+<style id="wy-bh18p12-css">
+.bh18p12-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh18p12-fabbox.show{display:block;}
+.bh18p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh18p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh18p12-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh18p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh18p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh18p12-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh18p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh18p12-modal.open{display:flex;}
+.bh18p12-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh18p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh18p12-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh18p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh18p12-close:hover{background:#dde2e6;}
+.bh18p12-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh18p12-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh18p12-tbl th,.bh18p12-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh18p12-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh18p12-tbl thead th:nth-child(1){width:32%;}.bh18p12-tbl thead th:nth-child(2){width:41%;}.bh18p12-tbl thead th:nth-child(3){width:27%;}
+.bh18p12-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh18p12-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh18p12-guan{background:#eef2f5;color:#37505f;}
+.bh18p12-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh18p12-tbl tbody tr:nth-child(even) td.bh18p12-guan{background:#e8eef2;}
+.bh18p12-tbl tbody tr:nth-child(even) td.bh18p12-qa{background:#e7ecdb;}
+.bh18p12-tbl b{color:#8b2500;}
+.bh18p12-guan b{color:#2f6b5a;}
+.bh18p12-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh18p12-note b{color:#8b2500;}
+@media(max-width:900px){.bh18p12-fabbox{right:14px;}.bh18p12-tbl{font-size:11px;}.bh18p12-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh18p12-fabbox" id="bh18p12Box"><button class="bh18p12-btn" id="bh18p12Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh18p12-ic">譯</span><span class="bh18p12-ls"><span class="bh18p12-l1">本品 · 原文·白話·中觀</span><span class="bh18p12-l2">白話翻譯表</span></span></button></div><div class="bh18p12-modal" id="bh18p12Modal" role="dialog" aria-modal="true"><div class="bh18p12-card"><button class="bh18p12-close" id="bh18p12Close" type="button" aria-label="關閉">×</button><h3>卷十八 · 第12品 白話翻譯表（藉相修無相方便得法）</h3><p class="sub">大智度論卷十八·藉相修無相方便得法 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh18p12-tbl"><caption>藉相修無相方便得法 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh18p12-qa">問曰：已知般若體相是無相無得法，行者云何能得是法？</td><td>問道：既然已經了知般若的本體與相狀是「無相無得」之法，那麼修行人究竟要如何才能證得這樣的法呢？</td><td class="bh18p12-guan"><b>本體與實踐的斷裂——論主設問如刀切骨</b>——這一問直指大乘般若學說最核心的實踐難題：如果般若的本體本來就是「無相」、「無得」，也就是說沒有任何相狀可以被把握、也沒有任何東西可以被獲得，那麼修行人又要憑藉什麼方法、經由什麼途徑，才能「證得」這樣一種本質上「不可得」的法呢？本體論上的「無得」與實踐論上的「能得」，表面上形成了尖銳的矛盾，這正是本品「藉相修無相」要解決的核心課題。</td></tr><tr><td class="bh18p12-qa">答曰：佛以方便說法，令行者得般若波羅蜜。所謂藉相修無相——於六波羅蜜中，五波羅蜜為相，般若波羅蜜為無相；行者具足五波羅蜜因緣，則般若波羅蜜自現。</td><td>回答道：佛陀是以善巧方便的方式來說法，使修行人能夠證得般若波羅蜜。這就是所謂的「藉相修無相」——在六波羅蜜之中，布施、持戒、忍辱、精進、禪定這五種波羅蜜屬於「有相」的修行，而般若波羅蜜則屬於「無相」；修行人只要具足了前五種波羅蜜的因緣條件，般若波羅蜜自然而然就會顯現出來。</td><td class="bh18p12-guan"><b>藉相修無相——五度為相、般若為無相的因緣結構</b>——這是全品的核心解答，也是「方便」概念在大乘實踐論中的精妙運用：般若波羅蜜本身雖然無相無得，不能被直接、正面地「造作」出來，但可以透過修習五波羅蜜（有相的具體行持）作為因緣條件，讓般若波羅蜜「自現」。這裡的「自現」二字極為關鍵——不是修行人主動去「抓取」或「製造」般若，而是當因緣具足時，本自具足的般若智慧自然顯發，如同陽光本自遍照，只需撥雲即能得見。這一結構性回答，成功化解了本體「無得」與實踐「能得」之間的表面矛盾。</td></tr><tr><td class="bh18p12-src">復次，比丘一心專定，能觀諸法實相；如鏡清淨，能現萬像。譬如深水澄靜，能見底石；禪定澄心，能見般若。</td><td>再者，比丘只要能夠一心專注、安住在禪定之中，便能夠觀照到諸法的真實相狀；這就好比一面清淨無染的鏡子，能夠映現出萬千的形象一樣。又譬如深邃的水潭只要澄澈平靜下來，便能夠清楚地看見水底的石頭；同樣的道理，只要透過禪定使內心澄淨下來，便能夠照見般若智慧。</td><td class="bh18p12-guan"><b>定慧不二——鏡喻與深水喻</b>——此段以鏡子映像、深水見底二喻，闡明「定」與「慧」之間相資相成的關係：鏡子本自具有映現萬象的能力，只是被塵垢遮蔽；水潭本自澄澈見底，只是被波瀾攪動。禪定的作用，正是去除心念的塵垢與波瀾，使本自具足的般若觀照力得以顯發——這與前段「五波羅蜜具足則般若自現」的邏輯完全一致：禪定（定）正是五度之一，是般若（慧）得以彰顯的重要因緣，印證了大乘「定慧不二、相資相成」的修證心法。</td></tr><tr><td class="bh18p12-qa">問曰：若般若無相，云何以有相之五度為因？</td><td>問道：如果般若波羅蜜是無相的，那麼為什麼卻要以具有相狀的五種波羅蜜作為證得般若的因呢？</td><td class="bh18p12-guan"><b>再詰——有相之因如何生無相之果</b>——這是進一步深化的追問：若果（般若）是無相，因（五度）卻是有相，有相之因如何能生出無相之果？這一問延續了首段「本體與實踐斷裂」的疑難，要求論主給出更具體、更形象化的說明，而非僅止於「藉相修無相」的抽象命題。</td></tr><tr><td class="bh18p12-qa">答曰：譬如陶器之成，必藉土、水、火、輪、匠五緣——土為布施之基、戒為持守之壁、忍為堅韌之底、進為火候之力、定為凝成之蓋。五緣具足，器乃成；器成則水可盛。般若者，水也；五度者，器也。無器則水無所住。</td><td>回答道：這就好比陶器的燒製完成，必定要憑藉泥土、水、火、轉輪、匠人這五種因緣條件——泥土是布施的根基、持戒如同支撐器形的壁面、忍辱如同堅韌耐用的底部、精進如同掌控火候的力道、禪定則如同使器形凝聚成形的蓋子。這五種因緣條件全部具足了，陶器才能夠燒製完成；陶器燒製完成之後，才能夠用來盛裝水。般若智慧，就好比是那水一樣；而五種波羅蜜，就好比是盛水的陶器一樣。如果沒有陶器，水便無所依附、無處安住。</td><td class="bh18p12-guan"><b>陶器五緣喻——五度為器、般若為水的方便支點</b>——這是全品最具象、也最精妙的譬喻：陶器（器皿）本身「有相」可造，水（般若）卻「無相」可盛而不可造——正是因為器皿有相，才能承載無形無相的水，若無陶器，水便四散無所依託。同理，五波羅蜜（布施、持戒、忍辱、精進、禪定）作為有相的修行造作，正是承載、顯發無相般若的必要器皿；並非五度能夠「製造」般若，而是五度提供了般若得以安住、顯現的因緣條件。這一譬喻徹底化解了「有相之因生無相之果」的邏輯疑難，是「藉相修無相」方便義理最生動的說明。</td></tr><tr><td class="bh18p12-src">是故當知：俗諦之方便、真諦之實相，二諦不一不異，方便施設非違實相，實相現前必藉方便。行者於此二諦圓融中，以慈悲般若雙翼齊飛，於六波羅蜜中修行，則「能得」之問自然消解——得即無得，無得即得，法爾如是。</td><td>因此應當了知：世俗諦所說的種種方便施設，與第一義諦（真諦）所彰顯的實相，這二諦之間既不是完全相同、也不是彼此相異的；方便的施設安立，並不違背究竟的實相，而究竟實相要能夠現前顯發，也必定要憑藉方便的施設才能達成。修行人只要能夠在這二諦圓融無礙的義理之中，以慈悲與般若這雙翼一同飛翔，在六波羅蜜的修行之中如實用功，那麼最初「究竟要如何才能證得無相無得之法」這個問題，自然而然就能夠獲得化解——所謂「證得」，其實就是「無所證得」；而「無所證得」，也就正是真正的「證得」，一切法本來如此，法爾如是。</td><td class="bh18p12-guan"><b>二諦圓融——得即無得的終極解答</b>——這是全品的總結性回答，將前述「五度為相、般若為無相」「陶器盛水」等譬喻，提升到二諦圓融的理論高度：方便施設（俗諦）與究竟實相（真諦）之間，既非完全同一（否則方便即是實相，無需修行），也非截然相異（否則方便無法通向實相），而是「不一不異」的辯證關係——方便不違實相，實相必藉方便而顯。慈悲與般若雙翼並運，正是「悲智雙運」的菩薩道核心精神，六度修行正是雙翼齊飛的具體實踐場域。最終「得即無得，無得即得」一句，徹底消解了首段「本體無得、如何能得」的表面矛盾，成就本品「藉相修無相方便得法」的圓滿義理。</td></tr></tbody></table><p class="bh18p12-note">大智度論卷十八第12品「藉相修無相方便得法」原文·白話·中觀對照。般若無相無得如何能得之設問、佛以方便說法藉相修無相、五波羅蜜為相般若波羅蜜為無相、比丘一心專定觀諸法實相鏡喻深水喻、再詰有相之因如何生無相之果、陶器五緣喻土水火輪匠、二諦圓融方便不違實相、得即無得無得即得法爾如是</p></div></div>
+<script id="wy-bh18p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh18p12Btn"),BOX=document.getElementById("bh18p12Box"),MODAL=document.getElementById("bh18p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c18p12Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh18p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH18P12:END-->
 </body></html>
