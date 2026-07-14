@@ -2351,4 +2351,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH18P12:END-->
+<!--WY-BH18P13:BEGIN-->
+<style id="wy-bh18p13-css">
+.bh18p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh18p13-fabbox.show{display:block;}
+.bh18p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh18p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh18p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh18p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh18p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh18p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh18p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh18p13-modal.open{display:flex;}
+.bh18p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh18p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh18p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh18p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh18p13-close:hover{background:#dde2e6;}
+.bh18p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh18p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh18p13-tbl th,.bh18p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh18p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh18p13-tbl thead th:nth-child(1){width:32%;}.bh18p13-tbl thead th:nth-child(2){width:41%;}.bh18p13-tbl thead th:nth-child(3){width:27%;}
+.bh18p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh18p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh18p13-guan{background:#eef2f5;color:#37505f;}
+.bh18p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh18p13-tbl tbody tr:nth-child(even) td.bh18p13-guan{background:#e8eef2;}
+.bh18p13-tbl tbody tr:nth-child(even) td.bh18p13-qa{background:#e7ecdb;}
+.bh18p13-tbl b{color:#8b2500;}
+.bh18p13-guan b{color:#2f6b5a;}
+.bh18p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh18p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh18p13-fabbox{right:14px;}.bh18p13-tbl{font-size:11px;}.bh18p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh18p13-fabbox" id="bh18p13Box"><button class="bh18p13-btn" id="bh18p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh18p13-ic">譯</span><span class="bh18p13-ls"><span class="bh18p13-l1">本品 · 原文·白話·中觀</span><span class="bh18p13-l2">白話翻譯表</span></span></button></div><div class="bh18p13-modal" id="bh18p13Modal" role="dialog" aria-modal="true"><div class="bh18p13-card"><button class="bh18p13-close" id="bh18p13Close" type="button" aria-label="關閉">×</button><h3>卷十八 · 第13品 白話翻譯表（精進波羅蜜開福貫珠）</h3><p class="sub">大智度論卷十八·精進波羅蜜開福貫珠 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh18p13-tbl"><caption>大智度論卷十八·精進波羅蜜開福貫珠 · 原文↔白話↔中觀概念 逐段對照 · 原文｜白話翻譯｜中觀概念（共2段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh18p13-src">復次，知欲界中多以慳、貪罪業，閉諸善門；行檀波羅蜜時，破是二事，開諸善門。欲令常開故，行十善道尸羅波羅蜜。未得禪定、智慧，未離欲故，破尸羅波羅蜜，以是故行忍辱。知上三事能開福門。</td><td>再者，應知欲界眾生大多因慳吝、貪求這兩種罪業，把種種善門都關閉了；修行布施波羅蜜的時候，正是要破除慳、貪這兩件事，因而開啟種種善門。為了想要讓這善門能夠常保開啟，所以進一步修十善道、持守尸羅波羅蜜（戒律）。然而在尚未證得禪定與智慧、尚未離開欲界貪愛的階段，往往會因種種因緣而毀犯尸羅波羅蜜，因此必須修忍辱波羅蜜（來對治犯戒之過失）。應當知道，以上布施、持戒、忍辱這三件事，都能夠開啟福德之門。</td><td class="bh18p13-guan"><b>三度為開福門——因果鏈鎖的次第結構</b>——這段文字揭示了六波羅蜜並非隨機並列，而是依循嚴密的因果推演所排定的次第：布施對治慳貪、持戒鞏固善門、忍辱補救持戒之缺口，三者環環相扣，共同構成「開啟福德之門」的完整結構。這種次第性正是中觀「因緣次第生」的精神體現——每一度的存在與位次，皆是為了對治前一度可能產生的缺陷，而非各自獨立、彼此無關的德目。</td></tr><tr><td class="bh18p13-src">又知是福德果報無常，天人中受樂，還復墮苦；厭是無常福德故，求實相般若波羅蜜。是云何當得？必以一心，乃當可得。如貫龍王寶珠，一心觀察，能不觸龍，則得價直閻浮提。一心禪定，除却五欲、五蓋，欲得心樂，大用精進，是故次忍辱說精進波羅蜜。如經中說：「行者端身直坐，繫念在前，專精求定；正使肌骨枯朽，終不懈退。」是故精進修禪。若有財而施，不足為難；畏墮惡道，恐失好名，持戒、忍辱亦不為難。以是故，上三度中不說精進。今為般若波羅蜜實相，從心求定，是事難故，應須精進。如是行，能得般若波羅蜜。</td><td>再者，應知這福德的果報是無常的，即使能生於天人之中享受安樂，最終仍會再度墮入苦趣；正因為厭離這種無常的福德，才轉而追求能證得諸法實相的般若波羅蜜。然而，這般若智慧要如何才能證得呢？必定要憑藉一心（專注不亂之心），才有可能證得。就如同要貫穿懸掛在龍王頭頂的寶珠一般，必須一心觀察、絲毫不觸犯到毒龍，才能取得那價值等同於整個閻浮提（人間世界）的寶珠。要達到一心禪定，除去五欲、五蓋這些障礙，進而獲得內心的安樂，就必須運用強大的精進力，因此接在忍辱波羅蜜之後，便說到精進波羅蜜。正如經中所說：「修行人端正身形、直身而坐，將念頭繫住在眼前的所緣境上，專心一意地求取禪定；即使到了肌肉、骨骼都因此枯槁朽壞的地步，也絕對不會鬆懈、退轉。」因此要靠著精進的力量來修習禪定。如果只是有財物而拿去布施，並不算是困難之事；因為畏懼墮入惡道、擔心失去好名聲，所以持戒、忍辱也不算是特別困難的事。正因為如此，在前三種波羅蜜（布施、持戒、忍辱）當中，並沒有特別強調「精進」的必要。而如今，是為了證得般若波羅蜜的真實相，要從內心求得禪定，這件事情非常困難，所以必須依靠精進的力量。像這樣修行下去，就能夠證得般若波羅蜜。</td><td class="bh18p13-guan"><b>精進為福德轉向實相的關鍵樞紐——貫珠喻與活化能</b>——本段以「貫龍王寶珠」為喻，揭示精進波羅蜜之所以獨立於布施、持戒、忍辱三度而特別標舉，正因為前三度所求（世間福德、免墮惡道、保全名聲）皆屬於「有所畏」、「有所求」的世間心理動能，相對容易生起；然而要從福德的無常性中厭離、轉而求證諸法無相無得的般若實相，卻沒有任何世間誘因可以驅動，唯有依靠純粹的精進之力，如貫穿毒龍寶珠般，在毫無外在保障的情況下一心用功，方能跨越「有為福德」與「無為實相」之間的斷層。這正呼應中觀「二諦」的思想脈絡——世俗諦所安立的福德修行雖有次第可循，然而通向第一義諦（實相般若）之路，卻必須以絕對的精進斬斷對福德果報的依戀，方能真正契入畢竟空的智慧。</td></tr></tbody></table><p class="bh18p13-note">大智度論卷十八第13品「精進波羅蜜開福貫珠」原文·白話·中觀對照。欲界慳貪罪業閉諸善門、行檀波羅蜜破慳貪開善門、十善道尸羅波羅蜜令善門常開、忍辱補尸羅之缺、福德果報無常天人受樂還墮苦、厭無常福德求實相般若、貫龍王寶珠一心觀察喻、一心禪定除五欲五蓋大用精進、行者端身直坐繫念在前肌骨枯朽終不懈退、精進修禪之因緣次第</p></div></div>
+<script id="wy-bh18p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh18p13Btn"),BOX=document.getElementById("bh18p13Box"),MODAL=document.getElementById("bh18p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c18p13Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh18p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH18P13:END-->
 </body></html>
