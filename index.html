@@ -1790,4 +1790,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH18P1:END-->
+<!--WY-BH18P2:BEGIN-->
+<style id="wy-bh18p2-css">
+.bh18p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh18p2-fabbox.show{display:block;}
+.bh18p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh18p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh18p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh18p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh18p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh18p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh18p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh18p2-modal.open{display:flex;}
+.bh18p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh18p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh18p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh18p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh18p2-close:hover{background:#dde2e6;}
+.bh18p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh18p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh18p2-tbl th,.bh18p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh18p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh18p2-tbl thead th:nth-child(1){width:32%;}.bh18p2-tbl thead th:nth-child(2){width:41%;}.bh18p2-tbl thead th:nth-child(3){width:27%;}
+.bh18p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh18p2-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh18p2-guan{background:#eef2f5;color:#37505f;}
+.bh18p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh18p2-tbl tbody tr:nth-child(even) td.bh18p2-guan{background:#e8eef2;}
+.bh18p2-tbl tbody tr:nth-child(even) td.bh18p2-qa{background:#e7ecdb;}
+.bh18p2-tbl b{color:#8b2500;}
+.bh18p2-guan b{color:#2f6b5a;}
+.bh18p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh18p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh18p2-fabbox{right:14px;}.bh18p2-tbl{font-size:11px;}.bh18p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh18p2-fabbox" id="bh18p2Box"><button class="bh18p2-btn" id="bh18p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh18p2-ic">譯</span><span class="bh18p2-ls"><span class="bh18p2-l1">本品 · 原文·白話·中觀</span><span class="bh18p2-l2">白話翻譯表</span></span></button></div><div class="bh18p2-modal" id="bh18p2Modal" role="dialog" aria-modal="true"><div class="bh18p2-card"><button class="bh18p2-close" id="bh18p2Close" type="button" aria-label="關閉">×</button><h3>卷十八 · 第2品 白話翻譯表（釋諸法實相與般若波羅蜜義）</h3><p class="sub">大智度論卷十八·釋諸法實相與般若波羅蜜義 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh18p2-tbl"><caption>諸法實相與讚般若波羅蜜偈 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh18p2-qa">問曰：云何是諸法實相？</td><td>請問：什麼是諸法實相呢？</td><td class="bh18p2-guan"><b>直探實相之問</b>——承接第一品「知諸法實相慧即般若波羅蜜」之義，本品開篇即以此問直指核心：般若波羅蜜的內涵，究竟要在何處落實？</td></tr><tr><td class="bh18p2-qa">答曰：眾人各各說諸法實相，自以為實。此中實相者，不可破壞，常住不異，無能作者。如後品中佛語須菩提：「若菩薩觀一切法，非常非無常，非苦非樂，非我非無我，非有非無等，亦不作是觀，是名菩薩行般若波羅蜜。」</td><td>世間眾人各自宣說自己認定的「諸法實相」，都自以為所說即是真實。而這裡所說的實相，是不可被破壞、恆常不變異、也沒有誰能造作出來的。就如同後面品目中佛對須菩提所說：「如果菩薩觀察一切法，既不是恆常也不是無常，既不是苦也不是樂，既不是有我也不是無我，既不是有也不是無等等，甚至連這樣的觀照本身也不執著、不當作一個新的觀念來安立，這樣就叫做菩薩修行般若波羅蜜。」</td><td class="bh18p2-guan"><b>否定式判準·亦不作是觀</b>——「不可破壞、常住不異、無能作者」三句以否定方式間接界定實相，封住「可辯破」「因緣變異」「被造作」三個方向；而「亦不作是觀」更進一步遣除對「非常非無常」等否定命題本身的執取，是雙重遣除的後設否定，正是般若「不可得而不落斷滅」的核心操作。</td></tr><tr><td class="bh18p2-src">是義，捨一切觀，滅一切言語，離諸心行，從本已來不生不滅，如涅槃相；一切諸法相亦如是，是名諸法實相。如〈讚般若波羅蜜偈〉說：</td><td>這個道理就是：捨棄一切能觀所觀的分別、止息一切言語概念、遠離一切心念造作，這樣的境界從本以來就不生不滅，如同涅槃之相；一切諸法的實相也是這樣，這就叫做諸法實相。正如〈讚般若波羅蜜偈〉中所說：</td><td class="bh18p2-guan"><b>捨觀·滅言·離心行——三重遣除證入涅槃相</b>——三個動作分別對應遣所觀之境、遣言詮概念、遣能觀之心，三者同時成就方名「如涅槃相」；這是將「不可破壞、常住不異、無能作者」的抽象判準，落實為具體可操作的觀修次第，正顯示《大智度論》「見地」與「行證」合一的一貫精神。</td></tr><tr><td class="bh18p2-src">諸佛及菩薩，能利益一切；般若為之母，能出生養育。</td><td>一切諸佛以及菩薩，都能利益普天下的眾生；而般若波羅蜜正是諸佛菩薩的母親，能出生並且養育他們。</td><td class="bh18p2-guan"><b>般若為母——非血緣的本體論依止</b>——「母」並非血緣譬喻，而是表達般若為一切覺悟得以成立的先在條件：若無般若照見諸法實相，佛不成佛、菩薩不成菩薩；此喻將般若安立為諸佛菩薩共同的、無自性可得卻又不可或缺的根源。</td></tr><tr><td class="bh18p2-src">佛為眾生父，般若能生佛，是則為一切，眾生之祖母。</td><td>佛是一切眾生的父親，而般若能出生佛，因此般若便是一切眾生的祖母。</td><td class="bh18p2-guan"><b>祖母喻——能生之能生亦復性空</b>——偈頌以「父—母—祖母」的世俗親屬關係層層遞進，善巧安立般若在因果次第中的根源地位；然而這一切「能生」關係仍是依世俗諦假名施設的言說方便，般若自身亦無自性可得，是以假名說「生」而非實有生滅，正呼應前一段「不生不滅，如涅槃相」的實相義。</td></tr></tbody></table><p class="bh18p2-note">大智度論卷十八第2品「釋諸法實相與般若波羅蜜義」原文·白話·中觀對照。不可破壞常住不異無能作者、亦不作是觀雙重否定、捨觀滅言離心行如涅槃相、讚般若波羅蜜偈般若為母</p></div></div>
+<script id="wy-bh18p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh18p2Btn"),BOX=document.getElementById("bh18p2Box"),MODAL=document.getElementById("bh18p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c18p2Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh18p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH18P2:END-->
 </body></html>
