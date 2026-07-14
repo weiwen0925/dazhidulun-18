@@ -2249,4 +2249,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH18P10:END-->
+<!--WY-BH18P11:BEGIN-->
+<style id="wy-bh18p11-css">
+.bh18p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh18p11-fabbox.show{display:block;}
+.bh18p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh18p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh18p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh18p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh18p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh18p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh18p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh18p11-modal.open{display:flex;}
+.bh18p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh18p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh18p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh18p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh18p11-close:hover{background:#dde2e6;}
+.bh18p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh18p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh18p11-tbl th,.bh18p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh18p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh18p11-tbl thead th:nth-child(1){width:32%;}.bh18p11-tbl thead th:nth-child(2){width:41%;}.bh18p11-tbl thead th:nth-child(3){width:27%;}
+.bh18p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh18p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh18p11-guan{background:#eef2f5;color:#37505f;}
+.bh18p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh18p11-tbl tbody tr:nth-child(even) td.bh18p11-guan{background:#e8eef2;}
+.bh18p11-tbl tbody tr:nth-child(even) td.bh18p11-qa{background:#e7ecdb;}
+.bh18p11-tbl b{color:#8b2500;}
+.bh18p11-guan b{color:#2f6b5a;}
+.bh18p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh18p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh18p11-fabbox{right:14px;}.bh18p11-tbl{font-size:11px;}.bh18p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh18p11-fabbox" id="bh18p11Box"><button class="bh18p11-btn" id="bh18p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh18p11-ic">譯</span><span class="bh18p11-ls"><span class="bh18p11-l1">本品 · 原文·白話·中觀</span><span class="bh18p11-l2">白話翻譯表</span></span></button></div><div class="bh18p11-modal" id="bh18p11Modal" role="dialog" aria-modal="true"><div class="bh18p11-card"><button class="bh18p11-close" id="bh18p11Close" type="button" aria-label="關閉">×</button><h3>卷十八 · 第11品 白話翻譯表（獨名般若四階漏斗）</h3><p class="sub">大智度論卷十八·獨名般若四階漏斗 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh18p11-tbl"><caption>獨名般若四階漏斗 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh18p11-qa">問曰：一切世俗經書，及九十六種出家經中，皆說有諸法實相；又聲聞法三藏中，亦有諸法實相，何以不名為般若波羅蜜？而此經中諸法實相，獨名般若波羅蜜？</td><td>問道：一切世俗的經典書籍，以及九十六種外道出家人所奉持的經典之中，都宣稱有所謂「諸法實相」；就連聲聞乘的三藏經典裡，也同樣談到「諸法實相」，那麼為什麼這些「實相」都不被稱為般若波羅蜜呢？而唯獨在這部般若經典中所說的諸法實相，卻獨獨被稱為般若波羅蜜呢？</td><td class="bh18p11-guan"><b>共名之惑——實相之名不蘊涵實相之實</b>——這是本品「獨名般若四階漏斗」的總綱之問：世俗典籍、九十六種外道經論、聲聞三藏都各自宣稱掌握「諸法實相」，若只從「名字」上看，四者似乎並無二致，那麼憑什麼獨獨般若經所說的實相才配稱為般若波羅蜜？此問直指問題核心並不在於「所觀之法」是否相同，而在於能觀之心的發心、智慧與願力是否究竟圓滿——這正是後文層層淘汰、層層遞進的四階論證即將展開的起點。</td></tr><tr><td class="bh18p11-qa">答曰：世俗經書中，為安國全家、身命壽樂故非實。</td><td>回答道：世俗典籍中所談論的「實相」，其目的是為了安定國家、保全家族、維護自身性命與追求現世的安樂，並非究竟真實。</td><td class="bh18p11-guan"><b>第一階淘汰——世俗經書為現世利益故非實</b>——四階漏斗的第一層過濾，淘汰的是世俗典籍：其動機始終停留在治國、齊家、保身、求樂等現世層面的關懷，發心本身就侷限於世間有漏的範疇，自然無法觸及超越生滅的究竟實相，這是最基礎、也最容易辨別的一層淘汰。</td></tr><tr><td class="bh18p11-src">外道出家，墮邪見法中，心愛著故，是亦非實。</td><td>外道出家人所談的「實相」，則是墮入了邪見的法門之中，內心對種種邪見有所貪愛執著的緣故，這同樣也不是真實的。</td><td class="bh18p11-guan"><b>第二階淘汰——外道邪見愛著故非實</b>——第二層過濾對象是九十六種外道出家眾：他們雖已捨棄世俗生活、出家修道，發心層次高於在家世俗人，卻仍落入邪見之中，且對這些邪見心生愛著執取，可見「出家」的形式並不保證「見地」的正確，這一層淘汰揭示：發心的純度必須同時檢驗「觀法」是否正確，二者缺一不可。</td></tr><tr><td class="bh18p11-src">聲聞法中雖有四諦，以無常、苦、空、無我觀諸法實相，以智慧不具足不利，不能為一切眾生、不為得佛法故，雖有實智慧，不名般若波羅蜜。如說：「佛入出諸三昧，舍利弗等乃至不聞其名，何況能知！」何以故？諸阿羅漢、辟支佛初發心時，無大願，無大慈大悲，不求一切諸功德，不供養一切三世十方佛，不審諦求知諸法實相；但欲求脫老、病、死苦故。</td><td>聲聞乘的教法之中，雖然也有苦、集、滅、道四聖諦，以無常、苦、空、無我這四種觀行來觀察諸法實相，但是由於他們的智慧尚未圓滿具足、不夠銳利通達，既不能為了一切眾生而修行，也不是為了成就佛陀的無上佛法而修行，所以雖然他們確實擁有真實的智慧，卻不能稱為般若波羅蜜。正如經中所說：「諸佛出入種種三昧的境界，就連舍利弗等大阿羅漢，尚且連聽都沒有聽過那些三昧的名字，更何況能夠真正了知其中的內容呢！」這是什麼緣故呢？因為諸阿羅漢、辟支佛在最初發心修行的時候，並沒有發起廣大的誓願，也沒有生起廣大的慈悲心，不曾祈求一切種種功德，也不曾供養三世十方一切諸佛，更沒有審慎周詳地探求了知諸法實相；他們最初發心，僅僅只是想要求得解脫老、病、死的痛苦而已。</td><td class="bh18p11-guan"><b>第三階淘汰——聲聞雖有實智而不圓滿</b>——第三層過濾最為關鍵，因為聲聞乘（阿羅漢、辟支佛）確實擁有「實智慧」，也確實依四諦、四觀照見了諸法實相的一分——這與世俗、外道的「非實」有本質差異。然而聲聞之智「不具足不利」，根源在於發心之初的格局：僅為個人解脫老病死苦而修，未曾發廣大誓願、未曾生大慈大悲、未曾供養十方諸佛、未曾徹底審諦求知實相。可見「智慧」只是工具，決定果報高下的關鍵在於「因」——也就是最初發心的願力與悲心是否廣大周遍，這正是全品「四階漏斗」論證中最細緻精微的一道分水嶺。</td></tr><tr><td class="bh18p11-src">諸菩薩從初發心，弘大誓願，有大慈悲，求一切諸功德，供養一切三世十方諸佛，有大利智，求諸法實相。除種種諸觀，所謂淨觀、不淨觀，常觀、無常觀，樂觀、苦觀，空觀、實觀，我觀、無我觀。捨如是等妄見心力諸觀，但觀外緣中實相，非淨、非不淨，非常、非非常，非樂、非苦，非空、非實，非我、非無我。如是等諸觀，不著不得；世俗法故，非第一義。周遍清淨，不破不壞，諸聖人行處，是名般若波羅蜜。</td><td>諸位菩薩則從最初發心開始，便弘揚廣大的誓願，具足廣大的慈悲之心，祈求成就一切種種功德，供養三世十方一切諸佛，並且具有廣大銳利的智慧，一心追求了知諸法實相。他們捨除了種種各別的觀行方式，也就是所謂清淨觀、不清淨觀，恆常觀、無常觀，快樂觀、痛苦觀，空觀、實有觀，有我觀、無我觀等等。捨棄了這些出於虛妄分別知見心力所生起的種種觀行之後，只是純粹地觀照外在因緣所生諸法之中的真實相狀——這種實相既不是清淨、也不是不清淨，既不是恆常、也不是非恆常，既不是快樂、也不是痛苦，既不是空、也不是實有，既不是有我、也不是無我。像這樣種種對立的觀行方式，菩薩對它們都不執著、也不有所取得；因為這些觀行本身仍屬於世俗層面的法，並非究竟第一義諦。唯有這種周遍清淨、不可被破壞、不可被毀壞的境界，才是一切聖人所共同行處之處，這才稱之為般若波羅蜜。</td><td class="bh18p11-guan"><b>第四階·菩薩超越二邊——不破不壞的中道實相</b>——這是四階漏斗的最終肯定階，也是全品的核心答案：菩薩不僅在發心上具足大願、大悲、供養十方佛、廣大利智（與聲聞形成鮮明對比），在觀法上更超越了淨／不淨、常／無常、樂／苦、空／實、我／無我等一切二元對立的觀行模式——這些成對的觀法本身雖是修行的善巧工具，卻仍屬「世俗法」，尚未觸及第一義諦。唯有捨離對這些觀法本身的執著與取著，安住於「非淨非不淨……非我非無我」這種超越四句、不落兩邊的中道實相，才是「周遍清淨、不破不壞」的般若波羅蜜——這正是本品標題「獨名般若波羅蜜」的最終落腳點：唯有這種發心悲智雙運、觀法超越二邊而不執著的實相，才配稱為般若波羅蜜。</td></tr></tbody></table><p class="bh18p11-note">大智度論卷十八第11品「獨名般若四階漏斗」原文·白話·中觀對照。世俗外道聲聞菩薩共名實相之惑、世俗經書為安國全家故非實、外道邪見愛著故非實、聲聞四諦實智不具足不圓滿、菩薩弘大誓願慈悲供養十方佛求實相、除淨不淨常無常等二邊觀行、周遍清淨不破不壞般若波羅蜜</p></div></div>
+<script id="wy-bh18p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh18p11Btn"),BOX=document.getElementById("bh18p11Box"),MODAL=document.getElementById("bh18p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c18p11Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh18p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH18P11:END-->
 </body></html>
