@@ -1739,4 +1739,55 @@ if(toc&&"IntersectionObserver" in window){
 }else{var ref=function(){var t=toc?toc.getBoundingClientRect().bottom:600;show(t>60);};window.addEventListener("scroll",ref,{passive:true});ref();}
 })();</script>
 <!--WY-BHALL18:END-->
+<!--WY-BH18P1:BEGIN-->
+<style id="wy-bh18p1-css">
+.bh18p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh18p1-fabbox.show{display:block;}
+.bh18p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh18p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh18p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh18p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh18p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh18p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh18p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh18p1-modal.open{display:flex;}
+.bh18p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh18p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh18p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh18p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh18p1-close:hover{background:#dde2e6;}
+.bh18p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh18p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh18p1-tbl th,.bh18p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh18p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh18p1-tbl thead th:nth-child(1){width:32%;}.bh18p1-tbl thead th:nth-child(2){width:41%;}.bh18p1-tbl thead th:nth-child(3){width:27%;}
+.bh18p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh18p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh18p1-guan{background:#eef2f5;color:#37505f;}
+.bh18p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh18p1-tbl tbody tr:nth-child(even) td.bh18p1-guan{background:#e8eef2;}
+.bh18p1-tbl tbody tr:nth-child(even) td.bh18p1-qa{background:#e7ecdb;}
+.bh18p1-tbl b{color:#8b2500;}
+.bh18p1-guan b{color:#2f6b5a;}
+.bh18p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh18p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh18p1-fabbox{right:14px;}.bh18p1-tbl{font-size:11px;}.bh18p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh18p1-fabbox" id="bh18p1Box"><button class="bh18p1-btn" id="bh18p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh18p1-ic">譯</span><span class="bh18p1-ls"><span class="bh18p1-l1">本品 · 原文·白話·中觀</span><span class="bh18p1-l2">白話翻譯表</span></span></button></div><div class="bh18p1-modal" id="bh18p1Modal" role="dialog" aria-modal="true"><div class="bh18p1-card"><button class="bh18p1-close" id="bh18p1Close" type="button" aria-label="關閉">×</button><h3>卷十八 · 第1品 白話翻譯表（釋初品中般若波羅蜜）</h3><p class="sub">大智度論卷十八·釋初品中般若波羅蜜 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh18p1-tbl"><caption>般若波羅蜜三番問答 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh18p1-src">【經】「於一切法不著故，應具足般若波羅蜜。」</td><td>對一切法都無所執著，因此才能圓滿具足般若波羅蜜。</td><td class="bh18p1-guan"><b>不著為般若之本</b>——「不著」二字直指般若的根本心法：不執取任何一法為固定不變的實有，正因無所執取，才能「具足」般若波羅蜜；此句已預先埋下全品「諸法性空、不破不壞」的總綱。</td></tr><tr><td class="bh18p1-qa">問曰：云何名般若波羅蜜？</td><td>請問：什麼叫做般若波羅蜜呢？</td><td class="bh18p1-guan"><b>釋名設問</b>——以「云何名」直探名相之實，是論主慣用的釋經體例，藉一問揭開下文「因中說果」等三重辯證，令讀者從名相入手漸契實相。</td></tr><tr><td class="bh18p1-qa">答曰：諸菩薩從初發心，求一切種智，於其中間，知諸法實相慧，是般若波羅蜜。</td><td>諸位菩薩從最初發菩提心開始，一直到追求佛陀的一切種智為止，在這整個過程當中，能夠了知一切法真實相狀的智慧，就叫做般若波羅蜜。</td><td class="bh18p1-guan"><b>因中說果</b>——般若波羅蜜被定義為「於其中間」的知實相慧，也就是因位過程中的智慧，卻直接借用果位「波羅蜜（到彼岸）」之名；這正顯示中觀「過程即含攝完成」的動態義理：因地之行已預含果地之名，因果不二，非常非斷。</td></tr><tr><td class="bh18p1-src">不生亦不滅　不常亦不斷　不一亦不異　不來亦不出</td><td>不生也不滅，不常也不斷；不一也不異，不來也不去。</td><td class="bh18p1-guan"><b>八不中道——般若的座標系</b>——龍樹以四對否定同時遮遣時間（生滅）、恆常性（常斷）、同一性（一異）、空間（來出）四個向度的實有執著，正是為「般若波羅蜜何以是進行式卻能名為完成式」提供理論根據：唯有先破除生滅常斷等對立範疇的實有執取，才能理解「因中說果」不是邏輯矛盾，而是緣起法本具的中道顯現。</td></tr><tr><td class="bh18p1-qa">問曰：若爾者，不應名為波羅蜜。何以故？未到智慧邊故。</td><td>如果是這樣的話，就不應該稱為波羅蜜了，為什麼呢？因為菩薩還沒有到達智慧的邊際啊。</td><td class="bh18p1-guan"><b>名實之辯的追問</b>——此問緊扣「菩薩未到智慧邊，何以借用波羅蜜之名」的張力，是三番問答中「名相悖論」的正式提出，逼顯下文「因中說果」之解。</td></tr><tr><td class="bh18p1-qa">答曰：佛所得智慧是實波羅蜜，因是波羅蜜故，菩薩所行亦名波羅蜜，因中說果故。是般若波羅蜜，在佛心中變名為一切種智。菩薩行智慧、求度彼岸，故名波羅蜜；佛已度彼岸，故名一切種智。</td><td>佛所證得的智慧才是真實圓滿的波羅蜜，正因為有這個真實的波羅蜜存在，菩薩所修行的智慧也才能稱為波羅蜜，這就是所謂的「因中說果」。這同一個般若波羅蜜，到了佛的心中就轉稱為一切種智。菩薩是修行智慧、追求度到彼岸，所以稱為波羅蜜；佛已經度到彼岸了，所以稱為一切種智。</td><td class="bh18p1-guan"><b>因中說果·假名隨緣轉異</b>——同一實相因主體證量深淺不同而有「波羅蜜」與「一切種智」兩種假名，說明名相本無自性，只是依因緣位階而施設的言說方便；名字隨因緣位移而轉換，所證之實相卻無二無別，正是中觀「名可分而體不可分」的精義。</td></tr><tr><td class="bh18p1-qa">問曰：佛一切諸煩惱及習已斷，智慧眼淨，應如實得諸法實相；諸法實相即是般若波羅蜜。菩薩未盡諸漏，慧眼未淨，云何能得諸法實相？</td><td>佛陀一切的煩惱以及煩惱習氣都已經斷盡，智慧之眼清淨無染，理應能夠如實證得諸法實相；諸法實相就是般若波羅蜜。可是菩薩還沒有斷盡一切煩惱，慧眼尚未清淨，那又怎麼能夠證得諸法實相呢？</td><td class="bh18p1-guan"><b>染淨並存的詰問</b>——此問直指「未斷煩惱的菩薩如何能見諸法實相」的表面矛盾，正是三重悖論中「染淨悖論」的原初提問，逼顯下文以入海喻回應「質同量異」的中道解法。</td></tr><tr><td class="bh18p1-qa">答曰：此義後品中當廣說，今但略說。如人入海，有始入者，有盡其源底者，深淺雖異，俱名為入。佛、菩薩亦如是，佛則窮盡其底；菩薩未斷諸煩惱習，勢力少故，不能深入。</td><td>這個道理留到後面的品目中再詳細解說，現在只是簡略地說明：就好比有人進入大海，有的人才剛剛入海，有的人已經到達海底最深處，雖然深淺程度不同，但都同樣稱為「入」海。佛與菩薩也是這樣，佛已經窮盡了大海的底源；菩薩因為還沒有斷盡煩惱習氣，力量還不夠，所以無法深入到底。</td><td class="bh18p1-guan"><b>質同量異——入海喻</b>——以同一片海水譬喻諸法實相唯一無二，證量深淺只是「斷煩惱習勢力大小」的差別，並非本質有無之別；菩薩雖未斷盡煩惱，所證與佛所證仍是同一實相之海，這正是「帶垢見淨」的中道見地，化解了染淨對立的表面矛盾。</td></tr><tr><td class="bh18p1-src">如後品中說譬喻：如人於闇室然燈，照諸器物，皆悉分了；更有大燈，益復明審。則知後燈所破之闇，與前燈合住；前燈雖與闇共住，而亦能照物。若前燈無闇，則後燈無所增益。諸佛菩薩智慧亦如是；菩薩智慧雖與煩惱習合，而能得諸法實相，亦如前燈亦能照物；佛智慧盡諸煩惱習，亦得諸法實相，如後燈倍復明了。</td><td>就如同後面品目中所說的譬喻：好比有人在暗室中點燃一盞燈，照亮各種器物，都能清楚地照見；後來又有一盞更大的燈，使照明更加清楚周詳。這時才知道，後面這盞大燈所破除的黑暗，原來一直與前面那盞燈的光共同存在；前面那盞燈雖然與黑暗同時並存，但它確實也能夠照見事物。如果前面的燈根本沒有黑暗與它共存，那麼後面的大燈也就無從再進一步增益光明了。諸佛與菩薩的智慧也是這樣：菩薩的智慧雖然還與煩惱習氣共存，但仍然能夠證得諸法實相，就好比前面那盞燈也能照見事物一樣；佛的智慧已經斷盡一切煩惱習氣，同樣證得諸法實相，就如同後面那盞大燈更加明徹周詳一般。</td><td class="bh18p1-guan"><b>燈闇共住——量變不礙質同的深觀</b>——此喻精細補足入海喻：菩薩智慧與煩惱「合住」卻不妨礙照見實相，說明煩惱本身並無獨立自性阻隔般若光明，若煩惱是實有障礙，則前燈照物之事便不可能發生；這正是中觀「煩惱即菩提」的具體表法——轉迷為悟不在消滅一個實有的黑暗，而在照見黑暗本無自性，當體即空。</td></tr></tbody></table><p class="bh18p1-note">大智度論卷十八第1品「釋初品中般若波羅蜜」原文·白話·中觀對照。經文不著即具足般若、三番問答因中說果、入海喻質同量異、闇室燃燈喻煩惱即菩提</p></div></div>
+<script id="wy-bh18p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh18p1Btn"),BOX=document.getElementById("bh18p1Box"),MODAL=document.getElementById("bh18p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c18p1Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh18p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH18P1:END-->
 </body></html>
